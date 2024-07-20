@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminCategory"
+    android:background="@drawable/purple_ring">
+
+
+    <TextView
+        android:id="@+id/tv_addnewproduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/akaya_telivigala"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:padding="@dimen/_6sdp"
+        android:gravity="center"
+        android:text="Choose a category to add a new product"
+        android:textColor="@color/purple"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_addnewproduct">
+
+
+        <ImageView
+            android:id="@+id/iv_electronics"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/electronics"
+            app:layout_constraintEnd_toStartOf="@+id/iv_clothes"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Electronics"
+            app:layout_constraintEnd_toEndOf="@+id/iv_electronics"
+            app:layout_constraintStart_toStartOf="@+id/iv_electronics"
+            app:layout_constraintTop_toBottomOf="@+id/iv_electronics" />
+
+        <ImageView
+            android:id="@+id/iv_clothes"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/clothes"
+            app:layout_constraintEnd_toStartOf="@+id/iv_Footware"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/iv_electronics"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Clothes"
+            app:layout_constraintEnd_toEndOf="@+id/iv_clothes"
+            app:layout_constraintStart_toStartOf="@+id/iv_clothes"
+            app:layout_constraintTop_toBottomOf="@+id/iv_clothes" />
+
+        <ImageView
+            android:id="@+id/iv_Footware"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/footware"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/iv_clothes"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Footware"
+            app:layout_constraintEnd_toEndOf="@+id/iv_Footware"
+            app:layout_constraintStart_toStartOf="@+id/iv_Footware"
+            app:layout_constraintTop_toBottomOf="@+id/iv_Footware" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_1">
+
+        <ImageView
+            android:id="@+id/iv_books"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/books"
+            app:layout_constraintEnd_toStartOf="@+id/iv_accessories"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Books"
+            app:layout_constraintEnd_toEndOf="@+id/iv_books"
+            app:layout_constraintStart_toStartOf="@+id/iv_books"
+            app:layout_constraintTop_toBottomOf="@+id/iv_books" />
+
+        <ImageView
+            android:id="@+id/iv_accessories"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/accessories"
+            app:layout_constraintEnd_toStartOf="@+id/iv_petsupplies"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/iv_books"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Accessories"
+            app:layout_constraintEnd_toEndOf="@+id/iv_accessories"
+            app:layout_constraintStart_toStartOf="@+id/iv_accessories"
+            app:layout_constraintTop_toBottomOf="@+id/iv_accessories" />
+
+        <ImageView
+            android:id="@+id/iv_petsupplies"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/petsupplies"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/iv_accessories"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Pet Supplies"
+            app:layout_constraintEnd_toEndOf="@+id/iv_petsupplies"
+            app:layout_constraintStart_toStartOf="@+id/iv_petsupplies"
+            app:layout_constraintTop_toBottomOf="@+id/iv_petsupplies" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ll_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_2">
+
+        <ImageView
+            android:id="@+id/iv_homedecor"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/homedecor"
+            app:layout_constraintEnd_toStartOf="@+id/iv_beauty"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Home Decor"
+            app:layout_constraintEnd_toEndOf="@+id/iv_homedecor"
+            app:layout_constraintStart_toStartOf="@+id/iv_homedecor"
+            app:layout_constraintTop_toBottomOf="@+id/iv_homedecor" />
+
+        <ImageView
+            android:id="@+id/iv_beauty"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/beauty"
+            app:layout_constraintEnd_toStartOf="@+id/iv_groceries"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/iv_homedecor"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Beauty"
+            app:layout_constraintEnd_toEndOf="@+id/iv_beauty"
+            app:layout_constraintStart_toStartOf="@+id/iv_beauty"
+            app:layout_constraintTop_toBottomOf="@+id/iv_beauty" />
+
+        <ImageView
+            android:id="@+id/iv_groceries"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/groceries"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/iv_beauty"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Groceries"
+            app:layout_constraintEnd_toEndOf="@+id/iv_groceries"
+            app:layout_constraintStart_toStartOf="@+id/iv_groceries"
+            app:layout_constraintTop_toBottomOf="@+id/iv_groceries" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
